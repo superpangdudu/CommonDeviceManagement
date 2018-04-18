@@ -1,0 +1,19 @@
+spring:
+  dubbo:
+    scan: com.krly.api
+    application:
+      name: abstarct-device-service
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 14216
+    comsumer:
+      timeout: 1000
+      check: true
+      retries: 0
+    provider:
+      retries: 0
+
+app:
+  zkAddress: 127.0.0.1:2181

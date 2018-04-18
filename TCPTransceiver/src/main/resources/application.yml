@@ -1,0 +1,16 @@
+
+spring:
+  dubbo:
+    scan: com.krly.api.comsumer
+    application:
+      name: TCP-transceiver
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    comsumer:
+      timeout: 1000
+      check: true
+      retries: 0
+
+curator:
+  zk-address: 127.0.0.1:2181
+

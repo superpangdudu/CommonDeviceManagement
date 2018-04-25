@@ -2,6 +2,7 @@ package com.krly;
 
 import com.krly.api.comsumer.AbstractDeviceProxy;
 import com.krly.transceiver.TransceiverServer;
+import com.krly.transceiver.UDPTransceiver;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
@@ -73,7 +74,12 @@ public class TcpTransceiverApplication {
 				.forPath(childPath);
 
 		//
-		logger.info("Starting TransceiverServer, host = {}, port = {}", host, port);
+		logger.info("Starting UDP TransceiverServer, host = {}, port = {}", host, port);
+		UDPTransceiver udpTransceiver = new UDPTransceiver(host, port, abstractDeviceProxy);
+		udpTransceiver.start();
+
+		//
+		logger.info("Starting TCP TransceiverServer, host = {}, port = {}", host, port);
 		TransceiverServer transceiverServer = new TransceiverServer(host, port, abstractDeviceProxy);
 		transceiverServer.start();
 	}

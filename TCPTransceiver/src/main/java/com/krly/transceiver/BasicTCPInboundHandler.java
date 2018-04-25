@@ -7,12 +7,12 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 @ChannelHandler.Sharable
-public class BasicInboundHandler extends SimpleChannelInboundHandler<ByteBuf> {
+public class BasicTCPInboundHandler extends SimpleChannelInboundHandler<ByteBuf> {
     private AbstractDeviceProxy abstractDeviceProxy;
     private String host;
     private int port;
 
-    BasicInboundHandler(AbstractDeviceProxy abstractDeviceProxy, String host, int port) {
+    BasicTCPInboundHandler(AbstractDeviceProxy abstractDeviceProxy, String host, int port) {
         this.abstractDeviceProxy = abstractDeviceProxy;
         this.host = host;
         this.port = port;

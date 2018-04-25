@@ -26,7 +26,7 @@ public class TransceiverServer {
 
     public synchronized void start() throws Exception {
         if (isRunning)
-            throw new Exception("Transceiver is already running");
+            throw new Exception("TCP Transceiver is already running");
 
         isRunning = true;
 
@@ -41,7 +41,7 @@ public class TransceiverServer {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 2, 0, 2));
-                            ch.pipeline().addLast(new BasicInboundHandler(abstractDeviceProxy, host, port));
+                            ch.pipeline().addLast(new BasicTCPInboundHandler(abstractDeviceProxy, host, port));
                         }
                     });
 

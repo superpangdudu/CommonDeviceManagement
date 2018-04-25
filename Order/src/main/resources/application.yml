@@ -1,0 +1,21 @@
+
+spring:
+  dubbo:
+    scan: com.krly.api.impl
+    application:
+      name: order-service
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 14316
+    provider:
+      retries: 0
+
+order:
+  database:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/payment?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+

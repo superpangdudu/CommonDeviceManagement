@@ -3,7 +3,7 @@ spring:
   dubbo:
     scan: com.krly.api.impl
     application:
-      name: TCP-transceiver
+      name: message-handler
     registry:
       address: zookeeper://127.0.0.1:2181
     protocol:

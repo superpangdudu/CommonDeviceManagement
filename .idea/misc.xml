@@ -7,7 +7,16 @@
         <option value="$PROJECT_DIR$/MessageHandlerService/pom.xml" />
         <option value="$PROJECT_DIR$/TCPTransceiver/pom.xml" />
         <option value="$PROJECT_DIR$/AbstractDeviceService/pom.xml" />
+        <option value="$PROJECT_DIR$/OrderService/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Order/pom.xml" />
+        <option value="$PROJECT_DIR$/Utils/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/OrderService/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

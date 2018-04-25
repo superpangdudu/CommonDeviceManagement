@@ -7,20 +7,31 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="abstract-device-interface" />
+        <module name="AbstractDeviceInterface" />
         <module name="AbstractDeviceService" />
+        <module name="APIPaymentInterface" />
+        <module name="demo" />
         <module name="MessageHandlerInterface" />
         <module name="MessageHandlerService" />
+        <module name="Order" />
+        <module name="OrderInterface" />
+        <module name="PaymentInterface" />
         <module name="TCPTransceiver" />
+        <module name="Utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="abstract-device-interface" target="1.5" />
+      <module name="AbstractDeviceInterface" target="1.5" />
       <module name="AbstractDeviceService" target="1.8" />
       <module name="API" target="1.5" />
       <module name="common-device-management" target="1.5" />
       <module name="MessageHandlerInterface" target="1.5" />
       <module name="MessageHandlerService" target="1.8" />
+      <module name="Order" target="1.8" />
+      <module name="OrderInterface" target="1.5" />
+      <module name="PaymentInterface" target="1.5" />
       <module name="TCPTransceiver" target="1.8" />
+      <module name="Utils" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

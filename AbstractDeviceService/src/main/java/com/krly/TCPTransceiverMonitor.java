@@ -12,6 +12,8 @@ import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.data.Stat;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.Map;
@@ -19,6 +21,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 
 public class TCPTransceiverMonitor implements SimpleTCPClientListener {
+    private static Logger logger = LoggerFactory.getLogger(TCPTransceiverMonitor.class);
+
     private static volatile TCPTransceiverMonitor INSTANCE = null;
 
     private TCPTransceiverMonitor() {
@@ -37,12 +41,16 @@ public class TCPTransceiverMonitor implements SimpleTCPClientListener {
     //===================================================================================
     @Override
     public void onConnected(Channel channel, String host, int port) {
+        logger.info("onConnected: {}, {}, {}", channel, host, port);
+
         String key = host + ":" + port;
         transceiverChannelMap.put(key, channel);
     }
 
     @Override
     public void onClosed(Channel channel, String host, int port) {
+        logger.info("onClosed: {}, {}, {}", channel, host, port);
+
         String key = host + ":" + port;
         transceiverChannelMap.remove(key);
     }

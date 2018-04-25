@@ -15,6 +15,8 @@
     <modules>
         <module>MessageHandlerInterface</module>
         <module>AbstractDeviceInterface</module>
+        <module>PaymentInterface</module>
+        <module>OrderInterface</module>
     </modules>
 
 

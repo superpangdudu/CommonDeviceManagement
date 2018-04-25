@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/AbstractDeviceService" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MessageHandlerService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OrderService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OrderService" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TCPTransceiver" charset="UTF-8" />
   </component>
 </project>

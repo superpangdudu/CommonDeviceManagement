@@ -3,12 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/API/API.iml" filepath="$PROJECT_DIR$/API/API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/API/AbstractDeviceInterface/AbstractDeviceInterface.iml" filepath="$PROJECT_DIR$/API/AbstractDeviceInterface/AbstractDeviceInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/AbstractDeviceService/AbstractDeviceService.iml" filepath="$PROJECT_DIR$/AbstractDeviceService/AbstractDeviceService.iml" />
       <module fileurl="file://E:\krly\CommonDeviceManagement\CommonDeviceManagement.iml" filepath="E:\krly\CommonDeviceManagement\CommonDeviceManagement.iml" />
       <module fileurl="file://$PROJECT_DIR$/API/MessageHandlerInterface/MessageHandlerInterface.iml" filepath="$PROJECT_DIR$/API/MessageHandlerInterface/MessageHandlerInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/MessageHandlerService/MessageHandlerService.iml" filepath="$PROJECT_DIR$/MessageHandlerService/MessageHandlerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Order/Order.iml" filepath="$PROJECT_DIR$/Order/Order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/API/OrderInterface/OrderInterface.iml" filepath="$PROJECT_DIR$/API/OrderInterface/OrderInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/API/PaymentInterface/APIPaymentInterface.iml" filepath="$PROJECT_DIR$/API/PaymentInterface/APIPaymentInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/TCPTransceiver/TCPTransceiver.iml" filepath="$PROJECT_DIR$/TCPTransceiver/TCPTransceiver.iml" />
-      <module fileurl="file://$PROJECT_DIR$/API/AbstractDeviceInterface/abstract-device-interface.iml" filepath="$PROJECT_DIR$/API/AbstractDeviceInterface/abstract-device-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Utils/Utils.iml" filepath="$PROJECT_DIR$/Utils/Utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-device-management.iml" filepath="$PROJECT_DIR$/common-device-management.iml" />
     </modules>
   </component>

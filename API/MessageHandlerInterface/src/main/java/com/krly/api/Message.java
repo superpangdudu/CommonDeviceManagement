@@ -2,9 +2,7 @@ package com.krly.api;
 
 import java.io.Serializable;
 
-/**
- * Created by Administrator on 2018/4/13.
- */
+
 public class Message implements Serializable {
     private int token;
     private byte[] data;
